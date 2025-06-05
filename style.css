@@ -1,0 +1,856 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+    font-family:"fira Sans", "Sans Serif";
+}
+
+body{
+    background-color: #F1F1F3;
+}
+
+#main{
+    padding: 10px 40px 10px 40px;
+}
+
+p{
+    line-height:1.5;
+}
+
+
+/* ------------Navigation Bar--------------- */
+nav{
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+nav button{
+     padding: 10px 18px 10px 18px;
+     border:0.2px solid #006A50;
+     color:#006A50;
+     font-weight:500;
+     font-size:16px;
+     background-color:white;
+     border-radius:8px;
+}
+
+nav button:hover{
+    background-color: #006A50;
+    color:white;
+}
+
+
+
+/* ------------Hero-Section--------------- */
+#hero-section{
+    background-color:#C6E4D6;
+    border-radius:24px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items: center;
+    padding:50px 30px 50px 30px;
+    margin-bottom:45px;
+}
+
+#hero-text{
+    width:60%;
+}
+
+#hero-text h5{
+    color: rgba(0,0,0,0.5);
+    font-size: 20px;
+    margin-bottom:10px;
+}
+
+#hero-text h1{
+    font-size: 40px;
+    line-height: 1.2;
+}
+
+#hero-text button{
+padding: 12px 20px 12px 20px;
+color:white;
+background-color: #006A50;
+border-radius: 8px;
+margin-top:20px;
+font-size:16px;
+border:none;
+}
+
+#hero-text button:hover{
+    background-color:black;
+}
+
+#img{
+    width:40%;
+}
+
+#hero-section img{
+    width:100%;
+    height:100%;
+}
+
+
+/* ------------Pillar-Section--------------- */
+#pillar-heading{
+    font-size:26px;
+    margin-top:60px;
+}
+
+#pillars, #vision{
+    display:flex;
+    justify-content:space-between;
+    margin-top:20px;
+    margin-bottom:30px;
+    gap:15px;
+}
+
+.card{
+    background-color:white;
+    border:1px solid rgba(0,0,0,0.15);
+    padding:30px 20px 30px 20px;
+    border-radius:10px;
+}
+
+.card img{
+    width:40px;
+    margin-bottom:20px;
+}
+
+.card h4{
+    margin-bottom:10px;
+    font-size:18px;
+}
+
+p{
+    color:rgba(0,0,0,0.7);
+}
+
+
+/* ------------vision-Section--------------- */
+#vision .card{
+    background-color:white;
+    padding:30px 20px 30px 20px;
+    border:none;
+    border-radius:10px;
+}
+
+#vision .card img{
+    width:55px;
+}
+
+.vcard1 button{
+    padding:7px 16px 7px 16px;
+    font-size:15px;
+    background-color: #5490F5;
+    color:white;
+    font-weight:450;
+    border-radius:7px;
+    border:none;
+    margin-top:30px;
+}
+
+.vcard2 button{
+    padding:7px 16px 7px 16px;
+    font-size:15px;
+    background-color: #09A15C;
+    color:white;
+    font-weight:450;
+    border:none;
+    border-radius:7px;
+    margin-top:60px;
+    margin-bottom:0px;
+    margin-top:30px;
+}
+
+.vcard3 button{
+    padding:7px 16px 7px 16px;
+    font-size:15px;
+    background-color: #FFC239;
+    color:white;
+    font-weight:450;
+    border:none;
+    border-radius:7px;
+    margin-bottom:0px;
+    margin-top:30px;
+}
+
+
+#vision .vcard1{
+    background-color:rgba(84, 143, 245,0.2);
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+#vision .vcard2{
+    background-color:#C6E4D6;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+#vision .vcard3{
+    background-color:#F7EBCF;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+#vision-heading{
+    font-size:26px;
+    margin-top:60px;
+    margin-bottom:20px;
+}
+
+.vcard1 button:hover{
+    background-color:#18315c;
+}
+
+.vcard2 button:hover{
+    background-color:#04512f;
+}
+.vcard3 button:hover{
+    background-color: #654d16;
+}
+
+
+
+/* ----------------Quote-Section------------------ */
+#quote{
+    background-color:white;
+    border:1px solid rgba(0,0,0,0.15);
+    border-radius:9px;
+    padding:20px;
+}
+
+#quote img{
+    width:40px;
+    margin-bottom:10px;
+}
+
+#quote h5{
+    margin-top:15px;
+    font-size:18px;
+}
+
+
+
+
+
+/*================================================
+===================Responsive=======================
+===================================================*/
+@media screen and (max-width:575.98px){
+
+    nav h1{
+        font-size:17px;
+    }
+
+    nav button{
+     padding: 7px 12px 7px 12px;
+     font-size:14px;
+     border-radius:5px;
+}
+
+#hero-text{
+    width:100%;
+}
+#img{
+    width:100%;
+}
+#hero-section{
+    border-radius:24px;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:column-reverse;
+    justify-content:space-between;
+    align-items: start;
+    padding:40px 20px 40px 20px;
+}
+ 
+    #hero-text h5{
+    font-size: 15px;
+    margin-bottom:10px;
+}
+
+#hero-text h1{
+    font-size:29px;
+}
+
+#hero-section img{
+    width:90%;
+    height:90%;
+    margin-bottom:60px;
+    margin-left:15px;
+}
+
+#hero-text button{
+padding: 7px 15px 7px 15px;
+margin-top:20px;
+font-size:12px;
+}
+
+
+/*pillar responsive*/
+#pillar-heading{
+    font-size:23px;
+}
+
+#pillars{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    margin-top:20px;
+    margin-bottom:30px;
+    gap:15px;
+}
+
+
+.card h4{
+    margin-bottom:10px;
+    font-size:17px;
+}
+
+.card p{
+    font-size:16px;
+}
+
+
+/*--Vision--Responsive--*/
+#vision{
+    display:flex;
+    flex-direction:column;   
+}
+
+.card .vbutton{
+        margin-top:40px;
+    }
+}
+
+#vision .card{
+    min-width:250px;
+}
+
+#vision-heading{
+    font-size:23px;
+}
+
+/*======================================*/
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+     nav h1{
+        font-size:17px;
+    }
+
+    nav button{
+     padding: 7px 12px 7px 12px;
+     font-size:14px;
+     border-radius:5px;
+}
+
+
+#hero-text h5{
+    font-size: 15px;
+    margin-bottom:10px;
+}
+
+#hero-text h1{
+    font-size:30px;
+}
+#hero-text button{
+padding: 7px 15px 7px 15px;
+border-radius: 8px;
+margin-top:20px;
+font-size:12px;
+}
+
+
+/*pillar responsive*/
+#pillar-heading{
+    font-size:26px;
+}
+
+#pillars{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    margin-top:20px;
+    margin-bottom:30px;
+    gap:15px;
+}
+
+
+.card h4{
+    margin-bottom:10px;
+    font-size:17px;
+}
+
+.card p{
+    font-size:16px;
+}
+
+#pillars .card{
+    max-height:300px;
+}
+
+
+
+/*--Vision--Responsive--*/
+
+.vbutton{
+        margin-top:40px;
+    }
+
+
+#vision{
+    display:flex;
+    flex-direction:column;
+}
+
+#vision .card{
+    min-width:150x;
+}
+
+#vision-heading{
+    font-size:26px;
+}
+
+}
+
+
+
+/*===========================================*/
+@media(min-width:600px){
+    
+    .card{
+    width: 47%;
+    height:auto;
+    margin:0px;
+}
+
+
+
+.card h4{
+    margin-bottom:10px;
+    font-size:17px;
+}
+
+.card p{
+    font-size:16px;
+}
+
+.card img{
+    width:40px;
+}
+
+
+/*--Vision--Responsive--*/
+#vision{
+    display:flex;
+    flex-direction:row;
+}
+
+#vision .card img{
+    width:40px;
+}
+
+#vision .card{
+    min-width:150px;
+}
+}
+
+/*===========================================*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+  nav h1{
+        font-size:19px;
+    }
+
+    nav button{
+     padding: 8px 14px 8px 14px;
+     font-weight:500;
+     font-size:14px;
+     border-radius:8px;
+}
+
+#hero-text h5{
+    font-size: 16px;
+    margin-bottom:10px;
+}
+
+#hero-text h1{
+    font-size:35px;
+}
+#hero-text button{
+padding: 8px 17px 8px 17px;
+border-radius: 9px;
+margin-top:22px;
+font-size:12px;
+}
+
+
+/*Responsive-pillar*/
+
+#pillars{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    margin-top:20px;
+    margin-bottom:30px;
+    gap:10px;
+    align-items:center;
+}
+
+
+.card{
+    width:49%;
+
+}
+
+.card h4{
+    margin-bottom:10px;
+    font-size:18px;
+}
+
+.card p{
+    font-size:16px;
+}
+
+/*Responsive-Vision*/
+#vision-heading{
+font-size:26px;
+}
+
+}
+
+/*===========================================*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+   nav h1{
+        font-size:19px;
+    }
+
+    nav button{
+     padding: 8px 14px 8px 14px;
+     font-weight:500;
+     font-size:14px;
+     border-radius:8px;
+}
+
+#hero-text h5{
+    font-size: 16px;
+    margin-bottom:10px;
+}
+
+#hero-text h1{
+    font-size:35px;
+}
+#hero-text button{
+padding: 8px 17px 8px 17px;
+border-radius: 9px;
+margin-top:22px;
+font-size:12px;
+}
+
+/*Responsive pillar*/
+.card{
+    width: 23%;
+}
+
+
+.card h4{
+    margin-bottom:10px;
+    font-size:19px;
+}
+
+.card p{
+    font-size:16px;
+}
+
+.card img{
+    width:44px;
+}
+
+
+
+/*--Vision--Responsive--*/
+#vision .card{
+    min-width:290px;
+}
+
+#vision .card{
+    width:900px;
+}
+
+#vision-heading{
+font-size:26px;
+}
+}
+
+
+
+/*===========================================*/
+@media (min-width: 1200px) and (max-width: 1599px){
+   nav h1{
+        font-size:21px;
+    }
+
+    nav button{
+     padding: 9px 15px 9px 15px;
+     font-weight:500;
+     font-size:15px;
+     border-radius:8px;
+}
+
+#hero-text h5{
+    font-size: 18px;
+    margin-bottom:10px;
+}
+
+#hero-text h1{
+    font-size:42px;
+}
+#hero-text button{
+padding: 10px 19px 10px 19px;
+border-radius: 9px;
+margin-top:22px;
+font-size:15px;
+}
+
+/*Responsive pillar*/
+.card{
+    width: 23%;
+}
+
+#pillar-heading{
+    font-size:30px;
+}
+
+
+.card h4{
+    margin-bottom:10px;
+    font-size:19px;
+}
+
+.card p{
+    font-size:16px;
+}
+
+.card img{
+    width:50px;
+}
+
+
+/*--Vision--Responsive--*/
+#vision .card{
+    width:900px;
+}
+
+#vision .card img{
+   width:55px; 
+}
+
+#vision-heading{
+font-size:30px;
+}
+}
+
+/*============================================*/
+@media (min-width: 1600px) and (max-width: 1919.98px) {
+  nav h1{
+        font-size:25px;
+    }
+
+    nav button{
+     padding: 12px 18px 12px 18px;
+     font-weight:500;
+     font-size:18px;
+     border-radius:8px;
+}
+
+#hero-text h5{
+    font-size: 22px;
+    margin-bottom:10px;
+}
+
+#hero-text h1{
+    font-size:50px;
+}
+#hero-text button{
+padding: 13px 22px 13px 22px;
+border-radius: 9px;
+margin-top:22px;
+font-size:18px;
+}
+
+/*Responsive pillar*/
+.card{
+    width: 23%;
+}
+
+#pillar-heading{
+    font-size:40px;
+}
+
+
+.card h4{
+    margin-bottom:10px;
+    font-size:24px;
+}
+
+.card p{
+    font-size:20px;
+}
+
+.card img{
+    width:60px;
+}
+
+/*--Vision--Responsive--*/
+#vision .card{
+    width:900px;
+    padding: 40px;
+}
+
+#vision .card img{
+   width:60px; 
+}
+
+.p-ash-color{
+    font-size:20px;
+}
+
+#vision-heading{
+font-size:30px;
+}
+
+#vision .card button{
+    padding:12px 25px 12px 25px;
+    font-size:18px;
+    font-weight:450;
+    border-radius:7px;
+    border:none;
+    margin-top:30px;
+}
+
+/*--Quote-Responsive--*/
+#quote p{
+    font-size:20px;
+}
+#quote h5{
+    font-size:25px;
+}
+
+#quote img{
+    width:45px;
+}
+}
+
+
+/*=========================================*/
+@media (min-width: 1920px) {
+  nav h1{
+        font-size:32px;
+    }
+
+    nav button{
+     padding: 16px 22px 16px 22px;
+     font-weight:500;
+     font-size:22px;
+     border-radius:8px;
+}
+
+#hero-text h5{
+    font-size: 25px;
+    margin-bottom:10px;
+}
+
+#hero-text h1{
+    font-size:65px;
+}
+#hero-text button{
+padding: 16px 25px 16px 25px;
+border-radius: 9px;
+margin-top:22px;
+font-size:22px;
+}
+
+/*Responsive pillar*/
+.card{
+    width: 23%;
+}
+
+#pillar-heading{
+    font-size:48px;
+}
+
+
+.card h4{
+    margin-bottom:10px;
+    font-size:30px;
+}
+
+.card p{
+    font-size:25px;
+}
+
+.card img{
+    width:70px;
+}
+
+
+
+/*--Vision--Responsive--*/
+#vision .card{
+    width:900px;
+}
+
+#vision .card img{
+   width:60px; 
+}
+
+.p-ash-color{
+    font-size:25px;
+}
+
+#vision-heading{
+font-size:48px;
+}
+
+#vision .card button{
+    padding:12px 25px 12px 25px;
+    font-size:18px;
+    font-weight:450;
+    border-radius:7px;
+    border:none;
+    margin-top:30px;
+}
+
+
+/*--Quote--Responsive--*/
+#quote p{
+    font-size:25px;
+}
+
+#quote h5{
+    font-size:27px;
+}
+
+#quote img{
+    width:50px;
+}
+}
+
+ 
+
+
+
+
+
+
+/*-----card---border---radius-------*/
+#pillars .card, #vision .card, #quote{
+border-radius:20px;
+}
